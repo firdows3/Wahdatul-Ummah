@@ -54,7 +54,7 @@ export default function OurCauses() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <img src="/unity.avif" alt="Unity" />
+        <Image src="/unity.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div style={{ fontSize: 45 }}>
             OUR CAUSES{" "}

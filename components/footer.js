@@ -33,7 +33,7 @@ export default function Footer() {
       <div className={`${kleeOne.className} footer-container`}>
         <div className="footer-top">
           <div className="footer-top-left">
-            <img src="/logo.jpg" />
+            <Image src="/logo.jpg" />
             <div>
               Increase in the awareness among people about WAHDATAL UMMAH
             </div>

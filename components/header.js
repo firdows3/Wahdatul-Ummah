@@ -25,7 +25,7 @@ export default function Header() {
         <Link href="/contacts">Contact US</Link>
       </div>
       <div>
-        <img src="/logo.jpg" />
+        <Image src="/logo.jpg" />
       </div>
       <div className="header-right">
         <FiLogIn className="header-login" size={24} />

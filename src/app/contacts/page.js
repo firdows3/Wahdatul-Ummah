@@ -51,7 +51,7 @@ export default function Contact() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <img src="/contact.avif" alt="Unity" />
+        <Image src="/contact.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div style={{ fontSize: 45 }}>
             OUR CONTACTS{" "}

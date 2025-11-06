@@ -120,7 +120,7 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <img src="/unity2.avif" alt="Unity" />
+        <Image src="/unity2.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div
             className={`${styles.home_header_text_bismillah} ${reemKufi.className}`}
@@ -166,7 +166,7 @@ export default function Home() {
             fontWeight: "600",
           }}
         >
-          <img src="/unity1.avif" />
+          <Image src="/unity1.avif" />
         </div>
         <div className={styles.home_about_desc}>
           <div>
@@ -310,7 +310,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <img src={team.img} alt={team.title} />
+              <Image src={team.img} alt={team.title} />
               <div
                 className={inriaSans.className}
                 style={{
