@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "../page.module.css";
 import { Inria_Serif, Klee_One } from "next/font/google";
 import { useRef, useState } from "react";
@@ -14,6 +13,7 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 import { Athiti } from "next/font/google";
+import Image from "next/image";
 const athiti = Athiti({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],

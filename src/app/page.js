@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaDonate, FaHandsHelping, FaHeadset } from "react-icons/fa";
 import { MdVolunteerActivism, MdSupportAgent } from "react-icons/md";
+import Image from "next/image";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const sliderSettings = {
