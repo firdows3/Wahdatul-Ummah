@@ -93,24 +93,22 @@ const teams = [
     img: "/person1.avif",
     title: "Mohammed Khelil",
     description: "General Manager",
+    icon: <FaDonate size={40} />,
   },
   { img: "/person2.avif", title: "Khalid Ahmed", description: "Vise Manager" },
   {
     img: "/person3.avif",
     title: "Ahmed Ymer",
     description: "Customer Service",
+    icon: <FaHandsHelping size={40} />,
   },
   { img: "/person4.avif", title: "Ali Sabit", description: "General Manager" },
   {
     img: "/event1.avif",
     title: "Semir Ibrahim",
     description: "General Manager",
+    icon: <MdSupportAgent size={40} />,
   },
-];
-const icons = [
-  <FaDonate size={40} />,
-  <FaHandsHelping size={40} />,
-  <MdSupportAgent size={40} />,
 ];
 export default function Home() {
   return (
@@ -220,7 +218,7 @@ export default function Home() {
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <div style={{ marginBottom: "10px" }}>{icons[index]}</div>
+                <div style={{ marginBottom: "10px" }}>{events[index].icon}</div>
                 <div
                   className={inriaSans.className}
                   style={{
