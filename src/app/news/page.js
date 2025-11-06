@@ -75,6 +75,7 @@ export default function News() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          key={index}
         >
           <div>
             <img
