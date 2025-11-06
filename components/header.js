@@ -4,6 +4,7 @@ import { FiMenu, FiPhoneCall, FiX, FiLogIn } from "react-icons/fi";
 import "./styles/header.css";
 import { Athiti } from "next/font/google";
 import { useState } from "react";
+import Image from "next/image";
 const athiti = Athiti({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -20,7 +21,7 @@ export default function Header() {
       <div className="header-left">
         <Link href="/">Home</Link>
         <Link href="/aboutUs">About Us</Link>
-        <Link href="/news">What's New</Link>
+        <Link href="/news">What&apos;s New</Link>
         <Link href="/ourCauses">Our Cause</Link>
         <Link href="/contacts">Contact US</Link>
       </div>
@@ -41,7 +42,7 @@ export default function Header() {
             About Us
           </Link>
           <Link onClick={() => setMenuOpen(false)} href="/news">
-            What's New
+            What&apos;s New
           </Link>
           <Link onClick={() => setMenuOpen(false)} href="/ourCauses">
             Our Cause

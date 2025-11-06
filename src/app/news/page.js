@@ -2,6 +2,7 @@
 import styles from "../page.module.css";
 import { Athiti, Inria_Sans } from "next/font/google";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const slideInLeft = {
   hidden: { opacity: 0, x: -50, scale: 0.95 },
@@ -60,7 +61,7 @@ export default function News() {
         <Image src="/event4.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div style={{ fontSize: 45 }}>
-            WHAT'S NEW
+            WHAT&apos;S NEW
             <div style={{ fontSize: 20 }}>
               Explore our upcoming events aimed at driving positive change in
               the Welega and Shewa zones.

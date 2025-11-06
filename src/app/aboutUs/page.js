@@ -2,6 +2,7 @@
 import styles from "../page.module.css";
 import { motion } from "framer-motion";
 import { Athiti, Inria_Sans, Reem_Kufi } from "next/font/google";
+import Image from "next/image";
 const athiti = Athiti({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -105,7 +106,7 @@ export default function AboutUS() {
           >
             Wahdatal Ummah was born out of a shared vision to address the
             pressing challenges faced by communities in East Oromia. The
-            founders, inspired by the region's rich culture and untapped
+            founders, inspired by the region&apos;s rich culture and untapped
             potential, recognized the need for a united effort to bring about
             sustainable change. Observing the gaps in education, economic
             opportunities, and media representation, they envisioned a platform

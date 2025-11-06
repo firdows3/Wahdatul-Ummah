@@ -1,5 +1,6 @@
 import "./styles/footer.css";
 import { Klee_One } from "next/font/google";
+import Image from "next/image";
 import { FaEnvelope, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const kleeOne = Klee_One({

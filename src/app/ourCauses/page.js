@@ -2,6 +2,7 @@
 import styles from "../page.module.css";
 import { motion } from "framer-motion";
 import { Athiti, Inria_Sans } from "next/font/google";
+import Image from "next/image";
 const athiti = Athiti({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
