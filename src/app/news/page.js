@@ -58,7 +58,7 @@ export default function News() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Image src="/event4.avif" alt="Unity" />
+        <img src="/event4.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div style={{ fontSize: 45 }}>
             WHAT&apos;S NEW
@@ -79,7 +79,7 @@ export default function News() {
           key={index}
         >
           <div>
-            <Image
+            <img
               src={item.image}
               alt={item.title}
               style={{ width: "100%", borderRadius: "8px" }}

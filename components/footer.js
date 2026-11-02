@@ -14,9 +14,10 @@ export default function Footer() {
       <div className={`${kleeOne.className} footer-donate`}>
         <div className="footer-donate-title">GET IN TOUCH</div>
         <div className="footer-donate-desc">
-          Support Wahdatal Ummah in spreading unity, knowledge, and community
-          development. Every donation helps us sustain our programs, reach more
-          people, and make a lasting impact.
+          Support Wahdatul Ummah Islamic Charity and Development Organization in
+          spreading unity, knowledge, and community development. Every donation
+          helps us sustain our programs, reach more people, and make a lasting
+          impact.
         </div>
         <div className="footer-donate-btn">Donate</div>
       </div>
@@ -34,7 +35,7 @@ export default function Footer() {
       <div className={`${kleeOne.className} footer-container`}>
         <div className="footer-top">
           <div className="footer-top-left">
-            <Image src="/logo.jpg" />
+            <img src="/logo.jpg" />
             <div>
               Increase in the awareness among people about WAHDATAL UMMAH
             </div>

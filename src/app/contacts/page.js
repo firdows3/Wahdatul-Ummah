@@ -51,13 +51,14 @@ export default function Contact() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Image src="/contact.avif" alt="Unity" />
+        <img src="/contact.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div style={{ fontSize: 45 }}>
             OUR CONTACTS{" "}
             <div style={{ fontSize: 20 }}>
-              CONTACT US For any information regarding Wahdatal Ummah you can
-              contact through the contact information below.
+              CONTACT US For any information regarding Wahdatul Ummah Islamic
+              Charity and Development Organization you can contact through the
+              contact information below.
             </div>
           </div>
         </div>

@@ -61,13 +61,13 @@ const events = [
     img: "/event1.avif",
     title: "FUND RAISING",
     description:
-      "Join us in empowering West Oromia by contributing to the Wahdatal Ummah platform, a transformative initiative uniting communities, advancing education, fostering economic growth, and amplifying local voices.",
+      "Join us in empowering West Oromia by contributing to the Wahdatul Ummah Islamic Charity and Development Organization Islamic Charity and Development Organization platform, a transformative initiative uniting communities, advancing education, fostering economic growth, and amplifying local voices.",
   },
   {
     img: "/event2.avif",
     title: "VOLUNTEERING",
     description:
-      "Become a part of the change—volunteer with Wahdatal Ummah to help unite communities, support education, drive economic growth, and amplify voices in East Oromia.",
+      "Become a part of the change—volunteer with Wahdatul Ummah Islamic Charity and Development Organization to help unite communities, support education, drive economic growth, and amplify voices in East Oromia.",
   },
   {
     img: "/event3.avif",
@@ -79,7 +79,7 @@ const events = [
     img: "/event4.avif",
     title: "VOLUNTEERING",
     description:
-      "Become a part of the change—volunteer with Wahdatal Ummah to help unite communities, support education, drive economic growth, and amplify voices in East Oromia.",
+      "Become a part of the change—volunteer with Wahdatul Ummah Islamic Charity and Development Organization to help unite communities, support education, drive economic growth, and amplify voices in East Oromia.",
   },
   {
     img: "/event5.avif",
@@ -111,7 +111,7 @@ const teams = [
     icon: <MdSupportAgent size={40} />,
   },
 ];
-export default function Home() {
+export default function EnHome() {
   return (
     <div className={styles.page}>
       <motion.div
@@ -121,7 +121,7 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Image src="/unity2.avif" alt="Unity" />
+        <img src="/unity2.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div
             className={`${styles.home_header_text_bismillah} ${reemKufi.className}`}
@@ -167,14 +167,15 @@ export default function Home() {
             fontWeight: "600",
           }}
         >
-          <Image src="/unity1.avif" />
+          <img src="/unity1.avif" />
         </div>
         <div className={styles.home_about_desc}>
           <div>
-            Wahdatal Ummah is an Islamic organization dedicated to promoting
-            unity, knowledge, and community development among Muslims. Our
-            mission is to strengthen the bond of brotherhood within the Ummah
-            through education, spiritual growth, and social support programs.
+            Wahdatul Ummah Islamic Charity and Development Organization is an
+            Islamic organization dedicated to promoting unity, knowledge, and
+            community development among Muslims. Our mission is to strengthen
+            the bond of brotherhood within the Ummah through education,
+            spiritual growth, and social support programs.
           </div>
           <div>
             We offer various membership options, including Normal and Special
@@ -182,9 +183,10 @@ export default function Home() {
             a strong, united, and informed Muslim community.
           </div>
           <div>
-            At Wahdatal Ummah, we believe that true unity comes through
-            understanding, compassion, and collective effort — working together
-            for the sake of Allah and the betterment of our society.
+            At Wahdatul Ummah Islamic Charity and Development Organization, we
+            believe that true unity comes through understanding, compassion, and
+            collective effort — working together for the sake of Allah and the
+            betterment of our society.
           </div>
           <Link href="/aboutUs" className={styles.btn}>
             See More
@@ -311,7 +313,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <Image src={team.img} alt={team.title} />
+              <img src={team.img} alt={team.title} />
               <div
                 className={inriaSans.className}
                 style={{

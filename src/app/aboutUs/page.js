@@ -64,10 +64,10 @@ export default function AboutUS() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Image src="/unity.avif" alt="Unity" />
+        <img src="/unity.avif" alt="Unity" />
         <div className={styles.header_text}>
           <div style={{ fontSize: 45 }}>
-            ABOUT WAHDATAL UMMAH{" "}
+            ABOUT Wahdatul Ummah Islamic Charity and Development Organization{" "}
             <div style={{ fontSize: 20 }}>Our goal is PARADISE !!</div>
           </div>
         </div>
@@ -104,22 +104,23 @@ export default function AboutUS() {
               lineHeight: "35px",
             }}
           >
-            Wahdatal Ummah was born out of a shared vision to address the
-            pressing challenges faced by communities in East Oromia. The
-            founders, inspired by the region&apos;s rich culture and untapped
-            potential, recognized the need for a united effort to bring about
-            sustainable change. Observing the gaps in education, economic
-            opportunities, and media representation, they envisioned a platform
-            that could bridge these divides while fostering unity and
-            collaboration. The organization began with grassroots discussions
-            involving local leaders, educators, business owners, and media
-            professionals. Through these conversations, it became clear that a
-            centralized digital platform could serve as a catalyst for
-            development and empowerment. With a strong commitment to inclusivity
-            and community-driven solutions, Wahdatal Ummah was established to
-            address these challenges holistically, bringing together people,
-            resources, and ideas to build a brighter future for East Oromia. (TO
-            BE CHANGED)
+            Wahdatul Ummah Islamic Charity and Development Organization was born
+            out of a shared vision to address the pressing challenges faced by
+            communities in East Oromia. The founders, inspired by the
+            region&apos;s rich culture and untapped potential, recognized the
+            need for a united effort to bring about sustainable change.
+            Observing the gaps in education, economic opportunities, and media
+            representation, they envisioned a platform that could bridge these
+            divides while fostering unity and collaboration. The organization
+            began with grassroots discussions involving local leaders,
+            educators, business owners, and media professionals. Through these
+            conversations, it became clear that a centralized digital platform
+            could serve as a catalyst for development and empowerment. With a
+            strong commitment to inclusivity and community-driven solutions,
+            Wahdatul Ummah Islamic Charity and Development Organization was
+            established to address these challenges holistically, bringing
+            together people, resources, and ideas to build a brighter future for
+            East Oromia. (TO BE CHANGED)
           </div>
         </motion.div>
       </motion.div>
@@ -284,19 +285,21 @@ export default function AboutUS() {
               lineHeight: "35px",
             }}
           >
-            Wahdatal Ummah has made a profound impact by fostering unity and
-            collaboration among communities in West Oromia, creating a more
-            harmonious and cooperative society. Through accessible educational
-            tools and opportunities, individuals have been empowered with the
-            knowledge and skills needed for personal and professional growth.
-            The organization has also enhanced economic opportunities by
-            supporting local businesses and entrepreneurs, leading to job
-            creation and improved livelihoods. Additionally, it has amplified
-            local voices through effective media advocacy, enabling communities
-            to share their stories, raise awareness, and influence positive
-            change. By addressing these core challenges holistically, Wahdatal
-            Ummah has laid the foundation for sustainable development,
-            benefiting current and future generations.
+            Wahdatul Ummah Islamic Charity and Development Organization has made
+            a profound impact by fostering unity and collaboration among
+            communities in West Oromia, creating a more harmonious and
+            cooperative society. Through accessible educational tools and
+            opportunities, individuals have been empowered with the knowledge
+            and skills needed for personal and professional growth. The
+            organization has also enhanced economic opportunities by supporting
+            local businesses and entrepreneurs, leading to job creation and
+            improved livelihoods. Additionally, it has amplified local voices
+            through effective media advocacy, enabling communities to share
+            their stories, raise awareness, and influence positive change. By
+            addressing these core challenges holistically, Wahdatul Ummah
+            Islamic Charity and Development Organization has laid the foundation
+            for sustainable development, benefiting current and future
+            generations.
           </div>
         </motion.div>
       </motion.div>
