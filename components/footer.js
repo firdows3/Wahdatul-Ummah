@@ -1,17 +1,11 @@
 import "./styles/footer.css";
-import { Klee_One } from "next/font/google";
 import Image from "next/image";
 import { FaEnvelope, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
-const kleeOne = Klee_One({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  display: "swap",
-});
 export default function Footer() {
   return (
     <>
-      <div className={`${kleeOne.className} footer-donate`}>
+      <div className={`footer-donate`}>
         <div className="footer-donate-title">GET IN TOUCH</div>
         <div className="footer-donate-desc">
           Support Wahdatul Ummah Islamic Charity and Development Organization in
@@ -32,7 +26,7 @@ export default function Footer() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className={`${kleeOne.className} footer-container`}>
+      <div className={` footer-container`}>
         <div className="footer-top">
           <div className="footer-top-left">
             <img src="/logo.jpg" />

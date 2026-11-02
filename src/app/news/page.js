@@ -1,6 +1,5 @@
 "use client";
 import styles from "../page.module.css";
-import { Athiti, Inria_Sans } from "next/font/google";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -8,17 +7,6 @@ const slideInLeft = {
   hidden: { opacity: 0, x: -50, scale: 0.95 },
   visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.6 } },
 };
-
-const athiti = Athiti({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-const inriaSans = Inria_Sans({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
 
 // Array for news content
 const newsContent = [
@@ -52,7 +40,7 @@ export default function News() {
   return (
     <div className={styles.page}>
       <motion.div
-        className={`${styles.headers} ${athiti.className}`}
+        className={`${styles.headers} `}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -72,7 +60,7 @@ export default function News() {
 
       {newsContent.map((item, index) => (
         <motion.div
-          className={`${styles.home_about} ${athiti.className}`}
+          className={`${styles.home_about}`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -86,10 +74,7 @@ export default function News() {
             />
           </div>
           <div className={styles.new_content_desc}>
-            <div
-              className={inriaSans.className}
-              style={{ fontSize: 22, fontWeight: 600, margin: "10px 0" }}
-            >
+            <div style={{ fontSize: 22, fontWeight: 600, margin: "10px 0" }}>
               {item.title}
             </div>
             <div>{item.description}</div>

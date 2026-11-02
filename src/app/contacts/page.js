@@ -1,7 +1,5 @@
 "use client";
 import styles from "../page.module.css";
-import { Inria_Serif, Klee_One } from "next/font/google";
-import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaEnvelope,
@@ -12,25 +10,8 @@ import {
   FaPhone,
   FaTiktok,
 } from "react-icons/fa";
-import { Athiti } from "next/font/google";
 import Image from "next/image";
-const athiti = Athiti({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
 
-const inriaSerif = Inria_Serif({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
-
-const kleeOne = Klee_One({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  display: "swap",
-});
 const slideInLeft = {
   hidden: { opacity: 0, x: -50, scale: 0.95 },
   visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.6 } },
@@ -45,7 +26,7 @@ export default function Contact() {
     <div className={styles.page}>
       {/* Header Section */}
       <motion.div
-        className={`${styles.headers} ${athiti.className}`}
+        className={`${styles.headers}`}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -115,7 +96,6 @@ export default function Contact() {
                   wordBreak: "break-word",
                   textAlign: "center",
                 }}
-                className={inriaSerif.className}
               >
                 {item.icon}
                 <p>{item.label}</p>

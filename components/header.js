@@ -2,18 +2,12 @@
 import Link from "next/link";
 import { FiMenu, FiPhoneCall, FiX, FiLogIn } from "react-icons/fi";
 import "./styles/header.css";
-import { Athiti } from "next/font/google";
 import { useState } from "react";
 import Image from "next/image";
 
 import { FiChevronDown } from "react-icons/fi";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
-const athiti = Athiti({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,7 +28,7 @@ export default function Header() {
   };
 
   return (
-    <div className={`${athiti.className} header-container`}>
+    <div className={`header-container`}>
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
       </div>

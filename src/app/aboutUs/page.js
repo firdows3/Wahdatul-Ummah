@@ -1,18 +1,8 @@
 "use client";
 import styles from "../page.module.css";
 import { motion } from "framer-motion";
-import { Athiti, Inria_Sans, Reem_Kufi } from "next/font/google";
 import Image from "next/image";
-const athiti = Athiti({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-const inriaSans = Inria_Sans({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
+
 const slideInLeft = {
   hidden: { opacity: 0, x: -50, scale: 0.95 },
   visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.6 } },
@@ -58,7 +48,7 @@ export default function AboutUS() {
   return (
     <div className={styles.page}>
       <motion.div
-        className={`${styles.headers} ${athiti.className}`}
+        className={`${styles.headers} `}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -73,7 +63,7 @@ export default function AboutUS() {
         </div>
       </motion.div>
       <motion.div
-        className={`${styles.about_three} ${athiti.className}`}
+        className={`${styles.about_three} `}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -96,7 +86,6 @@ export default function AboutUS() {
           viewport={{ once: true }}
         >
           <div
-            className={athiti.className}
             style={{
               fontSize: "20px",
               margin: "0px auto",
@@ -125,7 +114,7 @@ export default function AboutUS() {
         </motion.div>
       </motion.div>
       <motion.div
-        className={`${styles.about_three} ${athiti.className}`}
+        className={`${styles.about_three}`}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -148,7 +137,6 @@ export default function AboutUS() {
           viewport={{ once: true }}
         >
           <div
-            className={athiti.className}
             style={{
               fontSize: "20px",
               margin: "0px auto",
@@ -167,7 +155,7 @@ export default function AboutUS() {
         </motion.div>
       </motion.div>
       <motion.div
-        className={`${styles.about_three} ${athiti.className}`}
+        className={`${styles.about_three}`}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -195,7 +183,6 @@ export default function AboutUS() {
                 viewport={{ once: true }}
               >
                 <div
-                  className={inriaSans.className}
                   style={{
                     fontSize: "22px",
                     margin: "5px 0px",
@@ -206,12 +193,12 @@ export default function AboutUS() {
                 </div>
                 <div>{focusArea[index].description}</div>
               </motion.div>
-            )
+            ),
           )}
         </div>
       </motion.div>
       <motion.div
-        className={`${styles.about_three} ${athiti.className}`}
+        className={`${styles.about_three}`}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -238,7 +225,6 @@ export default function AboutUS() {
               className={styles.about_four_each_line}
             >
               <div
-                className={inriaSans.className}
                 style={{
                   fontSize: "50px",
                   margin: "5px 0px",
@@ -254,7 +240,7 @@ export default function AboutUS() {
         </div>
       </motion.div>
       <motion.div
-        className={`${styles.about_three} ${athiti.className}`}
+        className={`${styles.about_three} `}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -277,7 +263,6 @@ export default function AboutUS() {
           viewport={{ once: true }}
         >
           <div
-            className={athiti.className}
             style={{
               fontSize: "20px",
               margin: "0px auto",
@@ -305,7 +290,7 @@ export default function AboutUS() {
       </motion.div>
 
       <motion.div
-        className={`${styles.about_three} ${athiti.className}`}
+        className={`${styles.about_three}`}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -337,7 +322,7 @@ export default function AboutUS() {
                   {focusArea[index].description}
                 </div>
               </motion.div>
-            )
+            ),
           )}
         </div>
       </motion.div>

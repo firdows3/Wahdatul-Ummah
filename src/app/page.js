@@ -1,6 +1,5 @@
 "use client";
 import styles from "./page.module.css";
-import { Athiti, Inria_Sans, Reem_Kufi } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
@@ -39,22 +38,6 @@ const slideInRight = {
   hidden: { opacity: 0, x: 50, scale: 0.95 },
   visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.6 } },
 };
-
-const reemKufi = Reem_Kufi({
-  subsets: ["arabic"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-const athiti = Athiti({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-const inriaSans = Inria_Sans({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
 
 const events = [
   {
@@ -115,7 +98,7 @@ export default function EnHome() {
   return (
     <div className={styles.page}>
       <motion.div
-        className={`${styles.headers} ${athiti.className}`}
+        className={`${styles.headers} `}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -123,9 +106,7 @@ export default function EnHome() {
       >
         <img src="/unity2.avif" alt="Unity" />
         <div className={styles.header_text}>
-          <div
-            className={`${styles.home_header_text_bismillah} ${reemKufi.className}`}
-          >
+          <div className={`${styles.home_header_text_bismillah} `}>
             بـسم الله الرحمان الرحيـم
           </div>
           <div className={styles.home_header_english_text}>
@@ -138,7 +119,7 @@ export default function EnHome() {
       </motion.div>
 
       <motion.div
-        className={`${styles.home_two} ${athiti.className}`}
+        className={`${styles.home_two}`}
         variants={slideInRight}
         initial="hidden"
         whileInView="visible"
@@ -154,13 +135,12 @@ export default function EnHome() {
       </motion.div>
 
       <motion.div
-        className={`${styles.home_about} ${athiti.className}`}
+        className={`${styles.home_about} `}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <div
-          className={inriaSans.className}
           style={{
             fontSize: "22px",
             margin: "5px 0px",
@@ -195,7 +175,7 @@ export default function EnHome() {
       </motion.div>
 
       <motion.div
-        className={`${styles.home_three} ${athiti.className}`}
+        className={`${styles.home_three}`}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -223,7 +203,6 @@ export default function EnHome() {
               >
                 <div style={{ marginBottom: "10px" }}>{events[index].icon}</div>
                 <div
-                  className={inriaSans.className}
                   style={{
                     fontSize: "22px",
                     margin: "5px 0px",
@@ -234,7 +213,7 @@ export default function EnHome() {
                 </div>
                 <div>{events[index].description}</div>
               </motion.div>
-            )
+            ),
           )}
         </div>
       </motion.div>
@@ -287,7 +266,7 @@ export default function EnHome() {
       </motion.div> */}
 
       <motion.div
-        className={`${styles.home_five} ${athiti.className}`}
+        className={`${styles.home_five} `}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -315,7 +294,6 @@ export default function EnHome() {
             >
               <img src={team.img} alt={team.title} />
               <div
-                className={inriaSans.className}
                 style={{
                   fontSize: "20px",
                   // margin: "10px 5px",

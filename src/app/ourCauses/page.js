@@ -1,18 +1,7 @@
 "use client";
 import styles from "../page.module.css";
 import { motion } from "framer-motion";
-import { Athiti, Inria_Sans } from "next/font/google";
-import Image from "next/image";
-const athiti = Athiti({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-const inriaSans = Inria_Sans({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
+
 const slideInLeft = {
   hidden: { opacity: 0, x: -50, scale: 0.95 },
   visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.6 } },
@@ -49,7 +38,7 @@ export default function OurCauses() {
   return (
     <div className={styles.page}>
       <motion.div
-        className={`${styles.headers} ${athiti.className}`}
+        className={`${styles.headers}`}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -111,7 +100,7 @@ export default function OurCauses() {
       </motion.div> */}
 
       <motion.div
-        className={`${styles.about_three} ${athiti.className}`}
+        className={`${styles.about_three} `}
         variants={slideInLeft}
         initial="hidden"
         whileInView="visible"
@@ -130,7 +119,6 @@ export default function OurCauses() {
                 viewport={{ once: true }}
               >
                 <div
-                  className={inriaSans.className}
                   style={{
                     fontSize: "22px",
                     margin: "5px 0px",
@@ -142,7 +130,7 @@ export default function OurCauses() {
                 <div>{focusArea[index].description}</div>
                 <div className={styles.btn}>Donate</div>
               </motion.div>
-            )
+            ),
           )}
         </div>
       </motion.div>
