@@ -11,7 +11,7 @@
   "dependencies": {
     "framer-motion": "^12.23.3",
     "i18next": "^25.6.2",
-    "next": "15.3.5",
+    "next": "^15.5.28",
     "next-intl": "^4.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -23,6 +23,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.5"
+    "eslint-config-next": "^15.5.28"
   }
 }
